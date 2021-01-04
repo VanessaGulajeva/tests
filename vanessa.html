@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Salaspils 1.vidusskola</title>
+
+<style>
+body{
+  background:#c0c0c0; /* Меняется фон экрана, выбирается здесь */
+}
+
+#wrapper{ /* Оболочка страницы сайта */
+  width: 900px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  background:#f2e8c9; /* Меняется задний фон страницы */
+}
+
+/* Шапка сайта */
+
+#header{
+position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
+  height: 130px; /* Высота шапки */
+  background-color: white; /* Фон шапки */
+   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+  border-radius: 5px; /* Закругляются углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+}
+img{ /* Фоновая картинка в шапке */
+float: left; /* Разрешаем наплывание других элементов на картинку */
+  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
+h1{ /* Заголовок сайта */
+  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
+  color:#464451; /* Цвет заголовка */
+}
+.nomer{ /*Подзаголовок (номер телефона)*/
+  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+  top:5px; /* Двигается вверх-вниз */
+  left:680px; /* Двигается вправо-влево */
+  font-size: 25px; /* Размер букв подзаголовка */
+  font-style:italic; /* Курсив */
+  font-weight:bold; /* Жирный */
+  color:#464451; /* Цвет букв подзаголовка */
+}
+
+/* Сайдбар (колонка справа) */
+
+#sidebar{ /* Блок сайдбара */
+  background-color: #ffffff; /* Фон блока */
+  width: 180px; /* Ширина блока */
+  padding: 10px; /* Отступ текста от краёв */
+  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+  border-radius: 5px; /* Закругляем углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+}
+.marcer{ /* Галочки маркеры меню */
+  float: left; /* Размещаем слева от текста */
+  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}
+
+/* Контент (статья) */
+
+#content{ /* Блок контента */
+  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+  width: 676px; /* Ширина статьи */
+  padding: 10px; /* Отступ текста от краёв блока */
+  background: #ffffff; /* Фон статьи */
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ /* Картинка в тексте слева */
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ /* Картинка в тексте справа */
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+/* Подвал */
+
+#footer{ /* Блок подвала */
+  height:80px; /* Высота блока подвала */
+  background-color: #ffffff; /* Фон блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 5px; /* Закруглённые углы */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+  .fon{ /* Telefona numurs */
+  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  margin:20px 0 0 20px;
+}
+.fax{ /* Adrese */
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ /* E-pasta adrese */
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper"> <!--Оболочка страницы-->
+<!--Шапка сайта-->
+    <div id="header">
+<!--Заголовок сайта-->
+      <h1 align="center">Salaspils 1.vidusskola</h1>
+<!--Описание (телефон)-->
+        <p class="nomer">Direktore:<br>Vera Kalniņa </p>
+		<img width="120" src="data:image/png;base64,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">
+    </div>
+<!--Сайдбар-->
+    <div id="sidebar">
+<!--меню-->
+      <h3>Arī mūsu mājaslapā:</h3>
+<!--Картинки маркеров меню (галочки)-->
+<ul>
+    <li><p><a href="file:///C:/Users/XTreme.ws/Desktop/JanaAsmenska/s1vsk.html"> Par skolu</a></p></li>
+     <li> <p><a href="file:///C:/Users/XTreme.ws/Desktop/majaslapa/vanessa.html">Skolas aktualitātes</a></p></li>
+    <li><p><a href="file:///C:/Users/XTreme.ws/Downloads/macibas%20(2).html"> Mācības</a></p></li>
+	 </ul>
+<!--Прямая синяя линия-->
+          <hr width="50" color="#037FFC" size="5">
+<!--Общая информация в сайдбаре-->
+      <h3 align="center">Vārda diena:
+3 decembrī- Evija, Raita, Jogita</h3>
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Virsraksta teksts-->
+        <h2 align="center">Skolēnu padome 2020./21.m.g.</h2>
+<!--Raksta teksts-->
+<p>2020./21. m.g. aizsākās ar jauno dalībnieku uzņemšanu Skolēnu padomes sastāvā. Pēc nepilna mēneša dalībnieku skaits palielinājās par 10 ieinteresētiem un darīt gribošiem jaunpienācējiem. Tagad SP komandā darbojas 20 radoši prāti, par kuriem šogad atbildīgā ir atkārtoti ievēlētā prezidente Daniela Vanceviča (12.b), prezidentes vietniece Aivija Grasa (12.b) un Inga Vītuma - Brūvere (direktores vietniece audzināšanas darbā).</p>
+<p>Šis gads visu darbos ir ieviesis jaunas un nepierastas darba metodes. Arī Skolēnu padomei nācās pielāgoties jaunajam mācību procesam. Visas sēdes kopš 1. septembra norisinājās Microsoft Teams platformā, kurā diskutēt un radīt jaunas idejas ir tikpat viegli kā atrodoties klātienē pie apaļā pārrunu galda.</p>
+<p>“Mēs, Skolēnu padome, esam priecīgi, ka varam turpināt dalīties ar savām idejām un iepriecināt skolēnus. Protams, vīruss liek par sevi manīt, bet mēs drīzumā plānojam atgriezties skolas sienās un turpināt baudīt skolas dzīvi ar visiem kopā!” ar savām pārdomām dalās Skolēnu padomes prezidente Daniela Vanceviča.</p>
+<!--Bilde labajā pusē-->
+	<img class="right" width="180" src="https://izglitiba.riga.lv/media/news/kOZZVwnWLwAew0iOq0y8uQh6yBBNBVpS.jpg">
+<h3 align="center">Internešu izglītība</h3>
+<p>Interešu izglītība ir viena no jomām, kurā skolēns atbilstoši savām vēlmēm, interesēm un iespējām var apgūt dzīves prasmes, kuras rosina izvēlēties veselīgu dzīves veidu</p>
+<p>Šajā mācību gadā skolas interešu izglītība piedāvā:</p>
+<ol>
+    <li>kultūrizglītības programmu;</li>
+	<li>sporta izglītības programmu;</li>
+	<li>tehniskās jaunrades programmu;</li>
+	<li>jaunatnes darba programmu;</li>
+	<li>citas izglītojošas programmas</li>
+</ol>
+    </div>
+<!--Pārplūdes aizliegums-->
+  <div class="clear"></div>
+<!--Basement-->
+    <div id="footer">
+      <p class="fon"><strong>Telefona numurs:<br> Vera Kalniņa- 67947253</strong> </p>
+      <p class="fax"><strong>Adrese:<br> Lauku iela 1, Ceru iela 1</strong></p>
+      <p class="mail"><strong>E-pasts:<br>skola@s1vsk.lv</strong></p>
+
+    </div>
+  </div>
+</body>
+</html>
